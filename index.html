@@ -3,8 +3,11 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-
-<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+<meta charset="UTF-8" content="">
+<meta name="author" content="${author}">
+<meta name="description" content="${description}">
+<title>Yuil Tripathee</title>
+<link href='https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap' rel='stylesheet' type='text/css' /><link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap' rel='stylesheet' type='text/css' /><link href='https://fonts.googleapis.com/css2?family=Baloo+2&display=swap' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
@@ -203,15 +206,18 @@ mark .md-meta { color: rgb(0, 0, 0); }
 
 
 /* font face configs */
-
+/* changed by YU */
+@import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 :root {
     /* change your prefered font here */
-    --title-font: "Inter Display", "Inter";
-    --text-font: "Inter";
+    --title-font: "Recursive", "Recursive Sans Linear", "Baloo 2", "Inter", sans-serif;
+    --text-font: "Recursive", "Recursive Sans Linear", "Baloo 2","Inter", sans-serif;
     /* the Inter fontface family provides rich opentype features. see https://rsms.me/inter/  */
     --general-font-feature-settings: "calt", "ccmp", "kern", "salt" 0;
     --cjk-font: "Source Han Sans SC", "思源黑体 CN", "思源黑体";
-    --mono-font: "JetBrains Mono";
+    --mono-font: "Recursive Mono Linear","JetBrains Mono", monospace;
     --fallback-font: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -277,8 +283,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
     --md-char-color: #b3bdd1;
     --meta-content-color: #398ea3;
     /*change color of meta contents like image text or link address in markdown */
-    --primary-color: #486df1;
-    --accent-color: #486df1;
+    /* changed by YU */
+    /* --primary-color: #486df1; */
+    --primary-color: #0050ff;
+    /* --accent-color: #486df1; */
+    /* changed by YU */
+    /* --accent-color: #FFA500 ; */
+    --accent-color: #ff6f00 ;
+    /* --accent-color: #ff002f ; */
     /* color of primary buttons */
     --primary-btn-border-color: var(--color-border-primary);
     --primary-btn-text-color: #fff;
@@ -323,13 +335,19 @@ mark .md-meta { color: rgb(0, 0, 0); }
     --border: #f1f3f4;
     --icon-color: var(--text-color);
     --icon-filer: brightness(10);
-    --title-color: #08090b;
+    /* changed by YU */
+    /* --title-color: #08090b; */
+    --title-color: #0050ff;
+    /* --title-color-faded: rgba(0, 80, 255, 1); */
     --monospace: var(--mono);
     --mark-border: none;
     --table-border: 1px solid var(--color-scale-gray-2) !important;
+    /* changed by YU */
+    --grid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dbedff' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    --grid-support: rgba(255, 255, 255, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --title-color: #eff0f2;
         --bg-color: #131416;
@@ -390,8 +408,11 @@ mark .md-meta { color: rgb(0, 0, 0); }
         --bookmark-color: #ae92e3;
         --star-color: var(--color-scale-blue-2);
         --table-border: 1px solid var(--color-scale-gray-7) !important;
+        --grid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f1f8ff' fill-opacity='0.06'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        --grid-support: rgba(0, 0, 0, 0);
     }
-}
+} */
+/* changed by YU: added grid and grid support */
 
 /* CJK override */
 
@@ -410,9 +431,20 @@ body, .file-list-item-summary {
     font-feature-settings: var(--general-font-feature-settings);
     color: var(--text-color);
     line-height: 1.6;
+    /* changed by YU */
+    background-color: var(--bg-color);
+    background-image: var(--grid);
+    background-repeat: repeat;
+}
+
+content {
+    background-image: var(--grid);
+    background-repeat: repeat;
 }
 
 #write {
+    /* changed by YU */
+    background-color: var(--grid-support);
     max-width: 860px;
     margin: 0 auto;
     padding: 30px;
@@ -439,15 +471,23 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-weight: bold;
+    /* changed by YU */
+    /* font-weight: bold; */
     line-height: 1.4;
     cursor: text;
     font-family: var(--display-font)!important;
+    font-weight: 650;
+    font-variation-settings: 'MONO' 0, 'CASL' 0.5;
 }
 
 h1, h2, h3, h4 {
     color: var(--title-color);
     letter-spacing: -0.04rem;
+}
+
+/* changed by YU */
+h1, h2 {
+    border-bottom: 1px solid var(--color-scale-blue-2);
 }
 
 h6 {
@@ -463,31 +503,38 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
     font-size: inherit;
 }
 
+/* changed by YU */
 h1 {
-    font-size: 2.25em;
+    /* font-size: 2.25em; */
+    font-size: 2.5em;
     line-height: 1.2;
 }
 
 h2 {
-    font-size: 1.75em;
+    /* font-size: 1.75em; */
+    font-size: 2em;
     line-height: 1.225;
 }
 
 h3 {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
+    font-size: 1.75em;
     line-height: 1.43;
 }
 
 h4 {
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
+    font-size: 1.5em;
 }
 
 h5 {
-    font-size: 1em;
+    /* font-size: 1em; */
+    font-size: 1.25em;
 }
 
 h6 {
-    font-size: 1em;
+    /* font-size: 1em; */
+    font-size: 1.25em;
     color: #777;
 }
 
@@ -522,6 +569,34 @@ ul, ol {
     padding-left: 30px;
 }
 
+/* changed by YU */
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+  }
+  
+  ol > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;    
+  }
+  
+  li ol > li {
+    margin: 0;
+  }
+  
+  li ol > li:before {
+    content: counters(item, ".") " ";
+  }
+
 ul:first-child, ol:first-child {
     margin-top: 0;
 }
@@ -539,6 +614,11 @@ blockquote {
     overflow: hidden;
     box-sizing: border-box;
 }
+
+/* changed by YU */
+/* blockquote:not(h1:first-child){
+    border-left: 4px solid var(--accent-color);    
+} */
 
 blockquote blockquote {
     padding-right: 0;
@@ -848,6 +928,13 @@ li.task-list-item>input[type=checkbox][checked=checked], li.task-list-item>input
 
 a {
     color: var(--text-link);
+}
+
+/* changed by YU */
+em {
+    font-weight: 600;
+    color: var(--title-color);
+    font-variation-settings: 'CASL' 1;
 }
 
 span.ty-icon.ty-delete-button::before {
@@ -1278,9 +1365,9 @@ blockquote>h6:first-child::before {
 }
 
 
-</style><title>Yuil</title>
+</style>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='hi-im-yuil-🙋♂️👋'><span>Hi, I&#39;m Yuil 🙋‍♂️👋</span></h1><blockquote><p><span>To further notice, this site is under construction...</span></p></blockquote><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#hi-im-yuil-🙋♂️👋">Hi, I'm Yuil 🙋‍♂️👋</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n6"><a class="md-toc-inner" href="#my-publications">My Publications</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n19"><a class="md-toc-inner" href="#social-links">Social Links</a></span></p></div><h2 id='my-publications'><span>My Publications</span></h2><p><span>Blogs in Medium are </span><a href='https://yuiltripathee.medium.com/'><span>here</span></a><span>.</span></p><h2 id='social-links'><span>Social Links</span></h2><ul><li><a href='https://www.linkedin.com/in/yuiltr/'><span>LinkedIn</span></a></li><li><a href='https://github.com/YuilTripathee'><span>GitHub</span></a></li></ul><p><span>or mail me at </span><a href='mailto:yuiltripathee@gmail.com' target='_blank' class='url'>yuiltripathee@gmail.com</a><span>.</span></p></div></div>
+<div id='write'  class=''><h1 id='welcome-im-yuil-🙋♂️👋'><span>Welcome, I&#39;m Yuil 🙋‍♂️👋</span></h1><blockquote><h4 id='notice'><span>Notice</span></h4><p><span>To further notice, this website is under construction. You can check here for my previous website.</span></p></blockquote><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#welcome-im-yuil-🙋♂️👋">Welcome, I'm Yuil 🙋‍♂️👋</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n7"><a class="md-toc-inner" href="#my-publications">My Publications</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n15"><a class="md-toc-inner" href="#social-links">Social Links</a></span></p></div><h2 id='my-publications'><span>My Publications</span></h2><p><span>I used to publish in Medium before and now, I&#39;m starting to write in Dev.to too.</span></p><p><span>Medium: </span><a href='https://medium.com/@yuiltripathee' target='_blank' class='url'>https://medium.com/@yuiltripathee</a></p><p><span>Dev.to: </span><a href='https://dev.to/yuiltripathee' target='_blank' class='url'>https://dev.to/yuiltripathee</a></p><h2 id='social-links'><span>Social Links</span></h2><ul><li><a href='https://www.linkedin.com/in/yuiltr/'><span>LinkedIn</span></a></li><li><a href='https://github.com/YuilTripathee'><span>GitHub</span></a></li></ul><p><span>or mail me at: </span><a href='mailto:yuiltripathee@gmail.com'><span>yuiltripathee@gmail.com</span></a></p></div></div>
 </body>
 </html>
